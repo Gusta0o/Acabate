@@ -15,29 +15,23 @@ function trocaImgA()
 }
 
 function addAbacate() {
-    count++; // Aumenta o contador a cada clique
+    count++;
 
-    // Adiciona um novo abacate após 10 cliques
     if (count >= 10) {
-        // Cria uma nova div para o novo abacate
-        let newDiv = document.createElement("div");
-        newDiv.classList.add("container"); // Adiciona a classe de estilo para exibir como flex*/
-        
         let newIndex = (lastIndex + 1) % abacates.length;
         lastIndex = newIndex;
 
-        //Cria o novo abacate
+        let newDiv = document.createElement("div");
+        newDiv.classList.add("container");
+
         let newAbct = document.createElement("img");
         newAbct.src = "Imgs/" + abacates[newIndex];
         newAbct.width = 100;
         newAbct.classList.add("abacate");
 
-        // Adiciona o novo abacate à nova div
         newDiv.appendChild(newAbct);
+        document.body.appendChild(newDiv); // Adiciona no body
 
-        // Adiciona a nova div ao contêiner original (abacateCont)
-        document.body.appendChild(newDiv);
-
-        count = 0; // Reseta o contador para o próximo ciclo
+        count = 0;
     }
 }
