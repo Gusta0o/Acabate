@@ -18,14 +18,12 @@ function addAbacate() {
     count++;
 
     if (count >= 10) {
-        let newIndex = (lastIndex + 1) % abacates.length;
-        lastIndex = newIndex;
 
         let newDiv = document.createElement("div");
         newDiv.classList.add("container");
 
         let newAbct = document.createElement("img");
-        newAbct.src = "Imgs/" + abacates[newIndex];
+        newAbct.src = "Imgs/abacateDiva.png"
         newAbct.width = 100;
         newAbct.classList.add("abacate");
 
