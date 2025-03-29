@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acabates</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(Imgs/arvre.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .container{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .abacate{
+            margin-left: 20px;
+            width: 100px;
+            cursor: pointer;
+        }
+        #abacate1:hover{
+            transition: 0.5s;
+            width: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div id="abacateCont" class="container">
+        <img class="abacate" id="abacate1" onclick="trocaImgA(); addAbacate();" src="Imgs/abacateUwU.png" width="100" alt="">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
