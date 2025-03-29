@@ -21,7 +21,7 @@ function addAbacate() {
         let newDiv = document.createElement("div");
         newDiv.classList.add("container"); // Adiciona a classe de estilo para exibir como flex
 
-        /* Cria o novo abacate
+        //Cria o novo abacate
         let newAbct = document.createElement("img");
         if(newAbct.src == "Imgs/abacateDiva.png")
         {
@@ -35,10 +35,6 @@ function addAbacate() {
         {
             newAbct.src = "Imgs/abacate0o0";
         }
-        else
-        {
-            newAbct.src = "Imgs/abacateDiva";
-        }*/
         
         newAbct.width = 100;
         newAbct.classList.add("abacate");
