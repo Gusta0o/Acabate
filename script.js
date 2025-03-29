@@ -24,6 +24,19 @@ function addAbacate() {
         // Cria o novo abacate
         let newAbct = document.createElement("img");
         newAbct.src = "Imgs/abacateDiva.png";
+        if(newAbct.src == "Imgs/abacateDiva.png")
+        {
+            newAbct.src = "Imgs/abacateT-T";
+        }
+        else if(newAbct.src == "Imgs/abacateT-T")
+        {
+            newAbct.src = "Imgs/abacate0o0";
+        }
+        else if(newAbct.src == "Imgs/abacateT-T")
+        {
+            newAbct.src = "Imgs/abacate0o0";
+        }
+        
         newAbct.width = 100;
         newAbct.classList.add("abacate");
 
