@@ -1,4 +1,6 @@
 let count = 0;
+let lastIndex = -1;
+const abacates = ["abacateDiva.png", "abacateT-T.png", "abacate0o0.png", "abacateUwU.png"];
 
 function trocaImgA()
 {
@@ -18,24 +20,15 @@ function addAbacate() {
     // Adiciona um novo abacate após 10 cliques
     if (count >= 10) {
         // Cria uma nova div para o novo abacate
-        let newDiv = document.createElement("div");
-        newDiv.classList.add("container"); // Adiciona a classe de estilo para exibir como flex
+        /*let newDiv = document.createElement("div");
+        newDiv.classList.add("container"); // Adiciona a classe de estilo para exibir como flex*/
+        
+        let newIndex = (lastIndex + 1) % abacates.length;
+        lastIndex = newIndex;
         
         //Cria o novo abacate
         let newAbct = document.createElement("img");
-        newAbct.src = "Imgs/abacateDiva";
-        if(newAbct.src == "Imgs/abacateDiva.png")
-        {
-            newAbct.src = "Imgs/abacateT-T";
-        }
-        else if(newAbct.src == "Imgs/abacateT-T")
-        {
-            newAbct.src = "Imgs/abacate0o0";
-        }
-        else if(newAbct.src == "Imgs/abacate0o0")
-        {
-            newAbct.src = "Imgs/abacateUwU";
-        }
+        newAbct.src = "Imgs/" + abacates[newIndex];
         newAbct.width = 100;
         newAbct.classList.add("abacate");
 
