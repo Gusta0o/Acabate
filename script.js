@@ -25,7 +25,7 @@ function addAbacate() {
         
         let newIndex = (lastIndex + 1) % abacates.length;
         lastIndex = newIndex;
-        
+
         //Cria o novo abacate
         let newAbct = document.createElement("img");
         newAbct.src = "Imgs/" + abacates[newIndex];
@@ -36,7 +36,7 @@ function addAbacate() {
         newDiv.appendChild(newAbct);
 
         // Adiciona a nova div ao contêiner original (abacateCont)
-        document.body.appendChild(newDiv);
+        /*document.body.appendChild(newDiv);*/
 
         count = 0; // Reseta o contador para o próximo ciclo
     }
