@@ -23,7 +23,6 @@ function addAbacate() {
 
         // Cria o novo abacate
         let newAbct = document.createElement("img");
-        newAbct.src = "Imgs/abacateDiva.png";
         if(newAbct.src == "Imgs/abacateDiva.png")
         {
             newAbct.src = "Imgs/abacateT-T";
@@ -35,6 +34,10 @@ function addAbacate() {
         else if(newAbct.src == "Imgs/abacateT-T")
         {
             newAbct.src = "Imgs/abacate0o0";
+        }
+        else
+        {
+            newAbct.src = "Imgs/abacateDiva";
         }
         
         newAbct.width = 100;
