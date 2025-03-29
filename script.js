@@ -20,9 +20,10 @@ function addAbacate() {
         // Cria uma nova div para o novo abacate
         let newDiv = document.createElement("div");
         newDiv.classList.add("container"); // Adiciona a classe de estilo para exibir como flex
-        newAbct.src = "Imgs/abacateDiva";
+        
         //Cria o novo abacate
         let newAbct = document.createElement("img");
+        newAbct.src = "Imgs/abacateDiva";
         if(newAbct.src == "Imgs/abacateDiva.png")
         {
             newAbct.src = "Imgs/abacateT-T";
